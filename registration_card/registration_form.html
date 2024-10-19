@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(90deg, #6a11cb, #2575fc);
+      }
+      h1 {
+        text-align: center;
+      }
+      .form-group label {
+        font-weight: bold;
+        margin: 10px;
+      }
+
+      .form-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 450px;
+      }
+      .form-group input {
+        margin: 10px;
+        border-radius: 100px;
+        border: 1px solid #ccc;
+        height: 40px;
+        width: 200px;
+      }
+
+      .one,
+      .two,
+      .three {
+        display: flex;
+      }
+
+      .gender-group {
+        margin: 10px;
+      }
+
+      .gender-group label {
+        margin-right: 1px;
+      }
+
+      .submit-btn-2 {
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+        color: white;
+        border: none;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .submit-btn-1 {
+        background: linear-gradient(45deg, #b90e0e, #d65757);
+        color: white;
+        border: none;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .submit-btn-1:hover,
+      .submit-btn-2:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h1>Registration</h1>
+        <div class="one">
+          <div class="form-group">
+            <label>Full Name:</label> <br />
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label>Username:</label> <br />
+            <input type="text" placeholder="Enter your username" required />
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="form-group">
+            <label>Email:</label> <br />
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number:</label> <br />
+            <input type="number" placeholder="Enter your number" required />
+          </div>
+        </div>
+
+        <div class="three">
+          <div class="form-group">
+            <label>Password:</label> <br />
+            <input type="password" placeholder="Enter your password" required />
+          </div>
+          <div class="form-group">
+            <label>Confirm Password:</label> <br />
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="gender-group">
+          <label>Gender:</label>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="other" /> Other</label
+          >
+        </div>
+        <button type="submit" class="submit-btn-1">Cancel</button>
+        <button type="submit" class="submit-btn-2">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
